@@ -1,15 +1,9 @@
-let state = {friends: [
-  {
-    name: 'Avi',
-    hometown: 'NYC',
-    id: 100
-    }
-  ],
-}
-export function manageFriends(state, action){
+// let state = {friends: []}
+
+export function manageFriends(state = {friends: []}, action){
   switch (action.type) {
     case 'ADD_FRIEND':
-      return {state.friends + state}
+      return {}
     case 'REMOVE_FRIEND':
       return {}
     default:
